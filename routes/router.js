@@ -16,8 +16,6 @@ router.get('/:id', function (req, res, next) {
 
    var ref = db.ref();
 
-
-
   ref.once("value", function(snapshot) {
 
     console.log("got the value");

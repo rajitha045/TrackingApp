@@ -46,7 +46,7 @@
       accept(myParam);
 
       map.setZoom(12);
-  
+
     function accept(id){
     console.log(id);
     	$.ajax({
@@ -63,8 +63,8 @@
         var row = table.insertRow(0);
         var cell = row.insertCell(0);
         var cell1 = row.insertCell(1);
-        cell.innerHTML = "<b>Place</b>";
-        cell1.innerHTML = "<b>Vicinity</b>";
+        cell.innerHTML = "<b>TrackedPersons Locations</b>";
+
 
         for (d in results) {
           if(results[d]["latitude"]!=undefined && results[d]["longitute"]!=undefined){
@@ -82,7 +82,6 @@
 
 
       var marker = new google.maps.Marker({
-
 
           position: {lat: x, lng: y},
           map: map
