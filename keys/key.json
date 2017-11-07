@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "trackband-iot",
+  "private_key_id": "b1f22818544a72b3cd0c34657f846ccfe7fe6fe4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDA6HnaIf490IxR\nkSxf7KTGPSAtHTqRTABFWEXu42yPiUrZlbDeUW7x7Zk+XctBC+hxWYzgZouXaCQk\n2UmxxACCmkUHzBS4SCGMy8dlXUorWPxhYgrpNsiDdyT1GnQbHGktrD+XYm0Yp3H4\nNqWuKbLvLiU7nC7mVqyw396y71aE0RKjTA6r9QDt8AzkT9HjWD5MgTbtEuC9Uccd\nEB6nPOZ5TDPbH1vW7koCRQgSPGeiKd9Fb4qfqIHp19ZApAjq/pbW+mEAuQSW5GAQ\naaw/uz/dGB48P/Vf6hmhJQh4tlQbEBeZGtvCr6wY4+NE3qDp4lt+Sj5UXMnPzLOT\naAPs1RyLAgMBAAECggEACtno5M7NtN9yzTHL27d9i1Mr6K3AuiSazUvKX0Y2uJpB\n9hxX/yF4iq5RVPNEuCt5z0p4xLSv/HvUsKfyX8gFOVOBN4+QyM7x6DAcTsThI7AV\nPkscDwNQYyjEEO+EgXPnLLUIPLVCKsVcgVhdmH7q/E5NtN0zvCw6+ZYWOl2BMeZR\nvpZSR4nAIaeNpnt3r5/lsaDp0W+m/HaQ0hwQWXHAExXIzZntrwMXHGnzWHAg9tqk\n/wV5iWow/BCN5MlJZN72C2n+KXOfT0ytroXsp70I6MvGgMvQHBnP0kRmVPczUEYn\ntj5vY+fUgGXvuyGERGQsnjcfW77m8a/bMpUH4I5mRQKBgQDxS0XfBS25/BlS8+Lh\nV/hF8IhuICerix80nMTqowZmC0ensZqN2B4XT/O5LWqXf7Pk0WR9q0R146sZxghR\nGtyyj6wznMUqpL9GeHaH+tvwUDuiuueRryZu6STvX9F2CF6vX6DAxIGLAm3lgWZU\nPQhNhRFLF9tD6ri3q4tbcyiEnQKBgQDMqkY4sFMfZ1uDmQ8BwoGpkyvUD4QpEgHf\nkfmTiLyyt7TECWKwRzAouzO1J95AAf0onv7THd3s9ywmHLWbifiCgxfDh3PiobJQ\nDqeKgwuAK/ne32IeLzmELDJ4w4MbkPEWQSzFlvBDKw4Pvpd8fifdRGl8QXP38rPi\nLngbrKkZRwKBgHo2r/sXumNbJtB3KtEMJ3n1LITq0Gz4mCOjy7E0RUdmKzLqp+d0\nMTmJi16dfEGjstAQpp9oIdK8L6tsPEYoHuRqFMRHgS3qJ99foFmbW87KNIpltGh7\nmDHQ8J41n/fyoVKeUuOQJDTuVA9MjTHZf90TqwCn4qzxtAGDZ6A4IauZAoGAc+TL\n5Nf8CeFmUeu/Mrjo4ZSEEg5DQVqAExC/KgsZB369bvD9oGJ/Y+E105Ri5w35RCJc\nnEHiZIhGyMIjGJOVVJpVP5SZS7FSnsDdoLK6NXcxhEIsdnk5cZ3xaq8Ts+1sh7Sa\nXL0vCmn8CXBcqdNqUYKm1QTfXX1i3WaA/vLTwosCgYEAtrFblupoE0aMyUnTt/JZ\nFENFbAGIah0tl4bYJPxkzaENIGJVqBkZf707kwJNBzDGUkotQfRZrAMf434i6yvB\nR6LhxsMMbUBiKrmebqYd9XrbwJhnSKtG+z5Ij1j6woTmOgq0/6KAohY5PnAoApU0\nn96WMWwlhK/k5ug6eXp/1JU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-5lih3@trackband-iot.iam.gserviceaccount.com",
+  "client_id": "107405484369219860870",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-5lih3%40trackband-iot.iam.gserviceaccount.com"
+}

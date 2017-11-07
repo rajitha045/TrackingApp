@@ -1,0 +1,24 @@
+{> "layout" /}
+{<pageContent}
+<section class="page-wrapper">
+	<div class="page-title">
+		<div class="row">
+			<div class="col-md-3">
+				<span class="menu-icon-wrapper page-icon-wrapper menu-active"><i class="fa fa-television sidebar-icon" aria-hidden="true"></i></span><span class="page-main-heading page-heading-margin-fix">Manage Transactions</span>
+			</div>
+		</div>
+	</div>
+	<div class="datable-wrapper">
+    	<table id="example" class="display" cellspacing="0" width="100%">
+
+            
+        </table>
+	</div>
+</section>
+<script>
+for(d in {dataTableHeaders}){
+console.log(d);
+}
+</script>
+
+{/pageContent}

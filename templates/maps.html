@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <title>Simple Map</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
+  <style>
+    #map {
+      height: 80%;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+  </style>
+</head>
+
+<body>
+<div  id="map"></div>
+<div style="margin-left: 620px;">
+  <b>Results</b>
+  <table id="places">
+</table>
+  </div>
+
+<script>
+  var map;
+  var markersArray = [];
+  var infoWindow;
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 28.5456, lng: 77.2732},
+      zoom: 8
+    });
+    infoWindow = new google.maps.InfoWindow();
+
+
+      var myParam = location.search.split('user=')[1];
+      console.log(myParam);
+      accept(myParam);
+
+      map.setZoom(12);
+  
+    function accept(id){
+    console.log(id);
+    	$.ajax({
+    			type: "GET",
+    			url: "/"+id,
+          success:function(data){console.log(data);callback(data)}
+    	});
+    }
+    function callback(results) {
+
+        var table = document.getElementById("places");
+        table.innerHTML="";
+        table.setAttribute('border','3px');
+        var row = table.insertRow(0);
+        var cell = row.insertCell(0);
+        var cell1 = row.insertCell(1);
+        cell.innerHTML = "<b>Place</b>";
+        cell1.innerHTML = "<b>Vicinity</b>";
+
+        for (d in results) {
+          if(results[d]["latitude"]!=undefined && results[d]["longitute"]!=undefined){
+                createMarker(results[d]);
+        }
+        }
+
+    }
+
+    function createMarker(place) {
+      console.log(parseFloat(place["latitude"]));
+      console.log(parseFloat(place["longitute"]));
+      x=parseFloat(place["latitude"]);
+      y=parseFloat(place["longitute"]);
+
+
+      var marker = new google.maps.Marker({
+
+
+          position: {lat: x, lng: y},
+          map: map
+        });
+      marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png');
+      markersArray.push(marker);
+
+    }
+
+    function deleteOverlays() {
+      if (markersArray) {
+        for (i in markersArray) {
+          markersArray[i].setMap(null);
+        }
+        markersArray.length = 0;
+      }
+    }
+  }
+</script>
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsJq6Luaz80dopUIwlJorEn4cU2-63Z1Q&callback=initMap&libraries=places"
+    async defer></script>
+</body>
+</html>
